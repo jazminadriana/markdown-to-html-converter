@@ -1,0 +1,57 @@
+* {
+     box-sizing: border-box;
+}
+ body {
+     font-family: Arial, sans-serif;
+     padding: 20px;
+}
+ #markdown-input {
+     width: 100%;
+     height: 100px;
+     border: 1px solid #374151;
+     padding: 12px;
+     resize: vertical;
+     border-radius: 8px;
+     background-color: #020617;
+     color: #e5e7eb;
+     margin-bottom: 12px;
+
+}
+
+#markdown-input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+ #html-output, #preview {
+     height: 100px;
+     display: inline-block;
+     width: 100%;
+     border: 1px solid #374151;
+     padding: 12px;
+     margin: auto; 
+     background-color: #020617;
+     color: #e5e7eb;
+     overflow-y: auto;
+     border-radius: 8px;
+     white-space: pre-wrap;  
+}
+
+#preview h1,
+#preview h2,
+#preview h3,
+#preview p {
+  margin: 0.4em 0;
+  line-height: 1.3;
+}
+
+ @media (min-width: 600px) {
+     #markdown-input, #html-output, #preview {
+         height: 200px;
+         margin: 0;
+    }
+     #container {
+         display: flex;
+         justify-content: space-evenly;
+         gap: 10px;
+    }
+}
